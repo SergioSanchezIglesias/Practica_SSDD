@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd iceflix_services
+
+#icebox --Ice.Config=icebox.config &  ### Si es la primera ejecucion, es decir, no se ha puesto en marcha el proceso de icebox, descomentar este comando
+
+gnome-terminal -- bash -c \
+	"python3 main_service.py --Ice.Config=main_service.config; bash"
+
+
+gnome-terminal -- bash -c \
+        "python3 authenticator_service.py --Ice.Config=authenticator_service.config; bash"
+
+gnome-terminal -- bash -c \
+        "python3 catalog_service.py --Ice.Config=catalog_service.config; bash"
+
+gnome-terminal -- bash -c \
+        "python3 streaming_service.py --Ice.Config=streaming_service.config; bash"

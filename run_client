@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd iceflix_services
+
+gnome-terminal -- bash -c \
+        "python3 client.py --Ice.Config=client.config 'aaaaaaaaaaa' 'MWBGU9HASO53PNR7NSE6ZXNPDU4D9WY7'; bash"
+
