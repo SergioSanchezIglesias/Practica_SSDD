@@ -1,6 +1,5 @@
 # Estructura para el proyecto de ssdd-lab
-## Información relevante acerca del Proyecto.
-- https://github.com/JulianRoman26/SCJG.ssdd
+
 ## Estructura.
 Este repositorio es el proyecto en Python de la asignatura SSDD y contiene los siguientes
 archivos y directorios:
